@@ -1,20 +1,20 @@
-version: "3"
+version: "3.9"
 
 services:
+
   dashboard:
     container_name: fstv_dashboard
     build: .
     restart: always
-    ports:
-      - 9991:9991
-    networks:
-      - public-network
-    volumes:
-      - "dashboard-volume:/data"
     depends_on:
       - nginx_rtmp
-    links:
-      - "nginx_rtmp:fstv_nginx_rtmp"
+    ports:
+      - 9991:9991
+    volumes:
+      - "dashboard-volume:/data"
+    networks:
+      - public-network
+
 
   nginx_rtmp:
     container_name: fstv_nginx_rtmp
