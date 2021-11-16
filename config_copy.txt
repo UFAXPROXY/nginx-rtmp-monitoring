@@ -1,0 +1,17 @@
+{
+  "site_title":"UFAX Monitoring",
+  "http_server_port":9991,
+  "rtmp_server_refresh":3000,
+  "rtmp_server_timeout":15000,
+  "rtmp_server_url":"http://43.229.79.68:8080/stat.xml",
+  "rtmp_server_stream_url":"rtmp://43.229.79.68:1935/live/",
+  "hls_server_stream_url":"http://43.229.79.68:8080/live/",
+  "rtmp_server_control_url":"http://43.229.79.68:8080/control",
+  "session_secret_key":"403fd81a39e7e4fdbabc72365b835f6b5116cb7f24232808193846a5530fe30d",
+  "username":"admin",
+  "password":"8a9b69a848a13fac72771cde",
+  "language":"en",
+  "template":"default",
+  "login_template":"login",
+  "version":"1.0.3"
+}

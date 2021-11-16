@@ -17,6 +17,7 @@ app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/template/');
 
+//console.log("start");
 
 function customHeaders( req, res, next ){
     app.disable( 'x-powered-by' );
@@ -147,5 +148,6 @@ setInterval(function(){
     });
 
   });
-
+  //console.log("RUNING");
 },config.rtmp_server_refresh);
+

@@ -19,7 +19,7 @@ ip=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\
 key=$(openssl rand -hex 32)
 
 #generate random password
-password=$(openssl rand -hex 12)
+password="Ufax@123456"
 
 #configure the dashboard
 $(replace_in_file 's,rtmp_server_url.*,rtmp_server_url\":'"\"http://$ip:8080/stat.xml"\"'\,,' "config.json")

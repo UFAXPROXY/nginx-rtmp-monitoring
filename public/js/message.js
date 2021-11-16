@@ -2,7 +2,7 @@ var system_massages = $("#system_massages");
 
 function system_error_message(msg)
 {
-    var error_msg = "<div class='col-md-12' style='padding-top: 30px;'> <div class='alert alert-dismissible alert-danger'> <button type='button' class='close' data-dismiss='alert'>×</button> <strong>Oh we have trubole!</strong> "+msg+"</div> </div>";
+    var error_msg = "<div class='col-md-12' style='padding-top: 30px;'> <div class='alert alert-dismissible alert-danger'> <button type='button' class='close' data-dismiss='alert'>×</button> <strong>ระบบมีปัญหา!</strong> "+msg+"</div> </div>";
     system_massages.html(error_msg);
 }
 

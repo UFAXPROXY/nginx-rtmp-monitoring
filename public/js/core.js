@@ -16,7 +16,7 @@ socket.on('connect',function() {
 socket.on('error', function(data){
     if(data.error)
     {
-        system_error_message("Please wait a little bit or contact technical support. ");
+        system_error_message("กรุณาติดต่อไปที่ support. 062-825-7888 ถ้าไม่รับแสดงว่าหลับ");
         system_is_down();
     }else{
         system_hide_message();
