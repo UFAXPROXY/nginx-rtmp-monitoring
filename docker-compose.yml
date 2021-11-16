@@ -1,7 +1,6 @@
-version: "3.7"
+version: "3"
 
 services:
-
   dashboard:
     container_name: fstv_dashboard
     build: .
@@ -15,7 +14,7 @@ services:
     depends_on:
       - nginx_rtmp
     links:
-      - "nginx_rtmp:server_nginx_rtmp"
+      - "nginx_rtmp:fstv_nginx_rtmp"
 
   nginx_rtmp:
     container_name: fstv_nginx_rtmp
