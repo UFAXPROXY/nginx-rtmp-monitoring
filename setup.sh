@@ -16,7 +16,7 @@ function replace_in_file() {
 ip=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 
 #generate session key
-key=$(openssl rand -hex 32)
+key="44e154a78486e639d263af5b23290a10649ec2f4d25d3063ec0fb29b1460ceea"
 
 #generate random password
 password="Ufax@123456"
